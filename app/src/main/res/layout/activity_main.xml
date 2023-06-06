@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:riv_corner_radius="16dp"
+            android:padding="10dp"
+            android:layout_marginVertical="8dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            app:riv_corner_radius="16dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:layout_marginVertical="8dp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            app:riv_corner_radius="16dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGetImages"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Get Images"/>
+
+</LinearLayout>
